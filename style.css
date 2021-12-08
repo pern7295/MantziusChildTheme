@@ -11,3 +11,25 @@ Updated: 2021-11-23 17:42:40
 
 */
 
+/* HEADER STYLING */
+
+.header_layout_2 .menu-center .main-navigation > div > ul {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: x-large;
+}
+
+@media (min-width: 992px) {
+  .container-fluid {
+    padding-right: 40px;
+    padding-left: 40px;
+    background-image: url(https://rendtorffdesigns.dk/kea/15_mantzius/wordpress/wp-content/uploads/2021/12/logo_tekst.png);
+    background-size: contain;
+    height: fit-content;
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+}
