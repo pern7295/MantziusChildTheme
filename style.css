@@ -33,3 +33,11 @@ Updated: 2021-11-23 17:42:40
     background-position: center;
   }
 }
+
+a:not(.button):not(.wc-forward):not(.wp-block-button__link):not(.botiga-quantity-plus):not(.botiga-quantity-minus):not(.remove_from_cart_button):not(.category-button):not(.page-numbers):hover,
+ul.wc-block-grid__products
+  li.wc-block-grid__product
+  .wc-block-grid__product-title:hover {
+  color: #ff5a2a;
+  text-decoration: underline #ff5a2a;
+}
