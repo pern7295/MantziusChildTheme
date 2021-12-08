@@ -11,6 +11,10 @@ Updated: 2021-11-23 17:42:40
 
 */
 
+html {
+  margin-top: 0px !important;
+}
+
 /* SIDE OVERSKRIFT FJERNES */
 
 .entry-header {
