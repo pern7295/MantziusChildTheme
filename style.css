@@ -87,6 +87,7 @@ ul.wc-block-grid__products
   padding: 5%;
 }
 
+/*Fjerner margin*/
 .remove_margin_bottom {
   margin-bottom: 0;
 }
