@@ -74,10 +74,19 @@ ul.wc-block-grid__products
   text-decoration: underline #ff5a2a;
 }
 
-/* Forside filteringen af cadogri marg */
+/* Forside filteringen af kategori marg */
 @media (min-width: 1024px) {
   body:not(.botiga-page-builder-mode) .no-sidebar .entry-content .alignwide {
     margin: 0px 0px calc(25% - 15vw);
     width: auto;
   }
+}
+
+/*Padding*/
+.add_padding {
+  padding: 5%;
+}
+
+.remove_margin_bottom {
+  margin-bottom: 0;
 }
