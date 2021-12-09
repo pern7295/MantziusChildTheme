@@ -66,3 +66,11 @@ ul.wc-block-grid__products
   color: #ff5a2a;
   text-decoration: underline #ff5a2a;
 }
+
+/* Forside filteringen af cadogri marg */
+@media (min-width: 1024px) {
+  body:not(.botiga-page-builder-mode) .no-sidebar .entry-content .alignwide {
+    margin: 0px 0px calc(25% - 15vw);
+    width: auto;
+  }
+}
