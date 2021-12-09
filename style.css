@@ -15,6 +15,13 @@ html {
   margin-top: 0px !important;
 }
 
+/* ALLE H2 SÅ DE KOMMER NED UNDER TEKSTEN */
+h2,
+.wp-block-search .wp-block-search__label {
+  color: rgba(255, 98, 51, 0.3);
+  transform: translateY(95px);
+}
+
 /* SIDE OVERSKRIFT FJERNES */
 .entry-header {
   margin-bottom: 40px;
@@ -24,7 +31,7 @@ html {
 
 /* mellemrum mellem header og første sektion fjernes */
 .content-wrapper {
-  margin-top: 0px;
+  margin-top: 0px !important;
   margin-bottom: 120px;
 }
 
