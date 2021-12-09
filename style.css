@@ -15,12 +15,29 @@ html {
   margin-top: 0px !important;
 }
 
+/* Siden bredde */
+@media (min-width: 1200px) {
+  .container,
+  .container-sm,
+  .container-md,
+  .container-lg,
+  .container-xl {
+    max-width: 1200px;
+  }
+}
+
 /* SIDE OVERSKRIFT FJERNES */
 
 .entry-header {
   margin-bottom: 40px;
   text-align: center;
   display: none;
+}
+
+/* mellemrum mellem header og første sektion fjernes */
+.content-wrapper {
+  margin-top: 0px;
+  margin-bottom: 120px;
 }
 
 /* HEADER STYLING */
