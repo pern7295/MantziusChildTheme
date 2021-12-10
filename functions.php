@@ -15,3 +15,17 @@ endif;
 add_filter( 'locale_stylesheet_uri', 'chld_thm_cfg_locale_css' );
 
 // END ENQUEUE PARENT ACTION
+
+//----------------------CUSTOM PHP - MANTZIUS ------------------------------------------
+
+// ADD COSTUM JS
+/**
+ * Enqueue a script with jQuery as a dependency.
+ */
+function wpdocs_scripts_method() {
+    wp_enqueue_script( 'custom-script', get_stylesheet_directory_uri() . '/min-js.js', array(), true, true );
+}
+add_action( 'wp_enqueue_scripts', 'wpdocs_scripts_method' );
+
+
+
