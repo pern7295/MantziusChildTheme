@@ -69,13 +69,13 @@ h2 {
 
 /*-----PROGRAMSIDE CSS-----*/
 .program_cover {
-  padding-right: 40px;
-  padding-left: 40px;
+  /* padding-right: 40px;
+  padding-left: 40px; */
   background-image: url("https://rendtorffdesigns.dk/kea/15_mantzius/wordpress/wp-content/uploads/2021/12/Produkt_baggrund-1.png");
   background-size: cover;
   height: 100%;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top;
   position: absolute;
   z-index: -1;
 }
