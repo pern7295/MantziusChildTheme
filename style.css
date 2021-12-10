@@ -80,6 +80,10 @@ h2 {
   z-index: -1;
 }
 
+.wc-block-grid__product-image {
+  background-color: #c8588d;
+}
+
 .padding_top_program {
   padding-top: 50vh;
 }
@@ -108,6 +112,11 @@ ul.wc-block-grid__products
 
 .wp-block-media-text .wp-block-media-text__content :first-child {
   margin-top: 15px;
+}
+/* programs siden over skriften med programmet */
+.opacity_css {
+  color: rgba(255, 98, 51, 0.3) !important;
+  z-index: -1;
 }
 
 /* **************************** */
@@ -158,5 +167,8 @@ ul.wc-block-grid__products
   body:not(.botiga-page-builder-mode) .no-sidebar .entry-content .alignwide {
     margin: 0px 0px calc(25% - 15vw);
     width: auto;
+  }
+  .program_padding {
+    padding: 0% 10% 0% 10%;
   }
 }
