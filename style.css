@@ -119,6 +119,19 @@ ul.wc-block-grid__products
   z-index: -1;
 }
 
+
+/*--- Nyhedsbrev ---*/
+
+.mc_mail_input {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+input[type="email"] {
+  width: 90%;
+}
+
+
 /* **************************** */
 /* lg Large devices (desktops, 992px and up) */
 /* **************************** */
@@ -172,3 +185,4 @@ ul.wc-block-grid__products
     padding: 0% 10% 0% 10%;
   }
 }
+
