@@ -120,6 +120,8 @@ ul.wc-block-grid__products
 }
 
 
+
+
 /*--- Nyhedsbrev ---*/
 
 .mc_mail_input {
@@ -143,6 +145,13 @@ input[type="checkbox"] {
   margin-left: 57px;
 }
 
+
+/*--- Footer - Minus margin så den fylder helt ud ---*/
+
+.footer-widgets-grid.col1.align-top {
+  width: 100vw;
+  margin-left: -20px;
+}
 
 
 /* **************************** */
@@ -184,10 +193,17 @@ input[type="checkbox"] {
   }
 
 
-  
+  /* lidt margin til nyhedsbrev - i stor version */
   form#mc4wp-form-1 {
     margin: 0 10vw 0 10vw;
 }
+
+/*--- Footer - Minus margin så den fylder helt ud ---*/
+.footer-widgets-grid.col1.align-top {
+  width: 100vw;
+  margin-left: -40px;
+}
+
 
 }
 
