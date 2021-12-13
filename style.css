@@ -153,6 +153,18 @@ table.woocommerce-product-attributes.shop_attributes {
   width: 50%;
 }
 
+
+
+/* margin til kurven */
+form.woocommerce-cart-form {
+  margin-top: 15vw;
+}
+/* Farve på kurven */
+.cart-layout2 .cart_totals {
+background-color: #0a0a0a !important;
+}
+
+
 /* ------ Categori/filter rettelser -----*/
 
 /* baggrund når man har filtreret..*/
@@ -292,6 +304,14 @@ input[type="checkbox"] {
     background-repeat: no-repeat;
     background-position: center;
   }
+
+/* - Margin på cart totalt i kurven - */
+  .cart-layout2 .cart_totals {
+    margin-top: 15vw;
+}
+
+
+
 }
 
 /* **************************** */
