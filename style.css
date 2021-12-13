@@ -120,6 +120,22 @@ ul.wc-block-grid__products
 }
 
 
+/*--- Single side Rettelser ------*/
+
+/* -...Så produktet ikke står oven i menuen...*/
+.product-gallery-summary.gallery-default {
+  margin-top: 20vw;
+}
+/* luft til relateret produkter, så man kan se h3 */
+section.related.products ul {
+  margin-top: 75px;
+}
+/* Hvid skrift til tags i relateret produkter*/
+section.related.products a {
+  color: white;
+}
+
+
 
 
 /*--- Nyhedsbrev ---*/
