@@ -148,7 +148,7 @@ table.woocommerce-product-attributes.shop_attributes {
 /* ------ Categori/filter rettelser -----*/
 
 /* baggrund når man har filtreret..*/
-.woocommerce-page-header  {
+header.woocommerce-page-header.woocommerce-page-header-style1.woocommerce-page-header-alignment-center {
   background-color: #0a0a0a;
   padding-top: 25px;
 }
