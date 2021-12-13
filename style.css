@@ -154,6 +154,7 @@ table.woocommerce-product-attributes.shop_attributes {
 }
 
 
+/* KURV - Login - SØG */
 
 /* margin til kurven */
 form.woocommerce-cart-form {
@@ -161,9 +162,20 @@ form.woocommerce-cart-form {
 }
 /* Farve på kurven */
 .cart-layout2 .cart_totals {
-background-color: #0a0a0a !important;
+background-color: rgba(255, 98, 51, 0.3)!important;
+}
+.woocommerce-cart .cart_totals h2 {
+  text-align: right;
+  transform: none;
+}
+.site-header-cart .widget_shopping_cart .woocommerce-mini-cart__buttons, .site-header-cart .widget_shopping_cart .woocommerce-mini-cart__total {
+  background-color: rgba(255, 98, 51, 0.3)!important;
 }
 
+/* SØG */
+.header-search-form.active {
+  background-color: rgba(255, 98, 51, 0.3);
+}
 
 /* ------ Categori/filter rettelser -----*/
 
@@ -307,7 +319,7 @@ input[type="checkbox"] {
 
 /* - Margin på cart totalt i kurven - */
   .cart-layout2 .cart_totals {
-    margin-top: 15vw;
+    margin-top: 12vw;
 }
 
 
