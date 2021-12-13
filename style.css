@@ -67,24 +67,26 @@ h2 {
   font-size: x-large;
 }
 
-
-
 /* --------  forside splash rettelse - 100vw i breden------ */
-video.wp-block-cover__video-background.intrinsic-ignore{
+video.wp-block-cover__video-background.intrinsic-ignore {
   width: 110vw;
   margin-left: -3vw;
 }
 
-/*- overlay skal også fylde hele skærmen..... */ 
-.wp-block-cover-image.has-background-dim.has-background-dim-40 .wp-block-cover__gradient-background, .wp-block-cover-image.has-background-dim.has-background-dim-40:not(.has-background-gradient):before, .wp-block-cover.has-background-dim.has-background-dim-40 .wp-block-cover__gradient-background, .wp-block-cover.has-background-dim.has-background-dim-40:not(.has-background-gradient):before {
-width: 120vw;
-margin-left: -50px;
+/*- overlay skal også fylde hele skærmen..... */
+.wp-block-cover-image.has-background-dim.has-background-dim-40
+  .wp-block-cover__gradient-background,
+.wp-block-cover-image.has-background-dim.has-background-dim-40:not(.has-background-gradient):before,
+.wp-block-cover.has-background-dim.has-background-dim-40
+  .wp-block-cover__gradient-background,
+.wp-block-cover.has-background-dim.has-background-dim-40:not(.has-background-gradient):before {
+  width: 120vw;
+  margin-left: -50px;
 }
 
 body:not(.botiga-page-builder-mode) .no-sidebar .entry-content .alignfull {
   max-width: 100vw;
 }
-
 
 /*-----PROGRAMSIDE CSS-----*/
 .program_cover {
@@ -138,7 +140,6 @@ ul.wc-block-grid__products
   z-index: -1;
 }
 
-
 /*--- Single side Rettelser ------*/
 
 /* -...Så produktet ikke står oven i menuen...*/
@@ -163,7 +164,6 @@ table.woocommerce-product-attributes.shop_attributes {
   width: 50%;
 }
 
-
 /* ------ Categori/filter rettelser -----*/
 
 /* baggrund når man har filtreret..*/
@@ -176,7 +176,6 @@ h1.woocommerce-products-header__title.page-title {
   color: white;
   text-align: left;
 }
-
 
 /*--- Nyhedsbrev ---*/
 
@@ -201,7 +200,6 @@ input[type="checkbox"] {
   margin-left: 57px;
 }
 
-
 /*--- Footer - Minus margin så den fylder helt ud ---*/
 
 .footer-widgets-grid.col1.align-top {
@@ -209,25 +207,45 @@ input[type="checkbox"] {
   margin-left: -20px;
 }
 
+/* om mantzius infografik */
+.infografik_1 {
+  background-image: url(https://rendtorffdesigns.dk/kea/15_mantzius/wordpress/wp-content/uploads/2021/12/om_m_1.1.png);
+  background-size: contain;
+  height: 100vh;
+  width: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
+.infografik_2 {
+  background-image: url(https://rendtorffdesigns.dk/kea/15_mantzius/wordpress/wp-content/uploads/2021/12/om_m_2.2.png);
+  background-size: contain;
+  height: 100vh;
+  width: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
 /* **************************** */
 /* lg Large devices (desktops, 992px and up) */
 /* **************************** */
 
 @media (min-width: 576px) {
-
   /* - Splashvideo */
-video.wp-block-cover__video-background.intrinsic-ignore {
-  margin-left: -100px;
-}
-/*- overlay skal også fylde hele skærmen..... */ 
-.wp-block-cover-image.has-background-dim.has-background-dim-40 .wp-block-cover__gradient-background, .wp-block-cover-image.has-background-dim.has-background-dim-40:not(.has-background-gradient):before, .wp-block-cover.has-background-dim.has-background-dim-40 .wp-block-cover__gradient-background, .wp-block-cover.has-background-dim.has-background-dim-40:not(.has-background-gradient):before {
-  margin-left: -100px;
+  video.wp-block-cover__video-background.intrinsic-ignore {
+    margin-left: -100px;
   }
-
+  /*- overlay skal også fylde hele skærmen..... */
+  .wp-block-cover-image.has-background-dim.has-background-dim-40
+    .wp-block-cover__gradient-background,
+  .wp-block-cover-image.has-background-dim.has-background-dim-40:not(.has-background-gradient):before,
+  .wp-block-cover.has-background-dim.has-background-dim-40
+    .wp-block-cover__gradient-background,
+  .wp-block-cover.has-background-dim.has-background-dim-40:not(.has-background-gradient):before {
+    margin-left: -100px;
+  }
 }
-  
+
 /* **************************** */
 /* lg Large devices (desktops, 992px and up) */
 /* **************************** */
@@ -266,26 +284,35 @@ video.wp-block-cover__video-background.intrinsic-ignore {
     margin: 0px 0 0px !important;
   }
 
-
   /* lidt margin til nyhedsbrev - i stor version */
   form#mc4wp-form-1 {
     margin: 0 10vw 0 10vw;
+  }
+
+  /*--- Footer - Minus margin så den fylder helt ud ---*/
+  .footer-widgets-grid.col1.align-top {
+    width: 100vw;
+    margin-left: -40px;
+  }
+
+  /* om mantzius infografik */
+  .infografik_1 {
+    background-image: url(https://rendtorffdesigns.dk/kea/15_mantzius/wordpress/wp-content/uploads/2021/12/om_mantzius_1.png);
+    background-size: contain;
+    height: 100vh;
+    width: auto;
+    background-position: center;
+  }
+
+  .infografik_2 {
+    background-image: url(https://rendtorffdesigns.dk/kea/15_mantzius/wordpress/wp-content/uploads/2021/12/om_mantzius_2.png);
+    background-size: contain;
+    height: 150vh;
+    width: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
-
-/*--- Footer - Minus margin så den fylder helt ud ---*/
-.footer-widgets-grid.col1.align-top {
-  width: 100vw;
-  margin-left: -40px;
-}
-
-
-
-}
-
-
-
-
-
 
 /* **************************** */
 /* lg Large devices (desktops, 1024px and up) */
@@ -301,4 +328,3 @@ video.wp-block-cover__video-background.intrinsic-ignore {
     padding: 0% 10% 0% 10%;
   }
 }
-
