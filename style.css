@@ -135,7 +135,28 @@ section.related.products a {
   color: white;
 }
 
+/* Event  beskrivelse rettelser */
+td.woocommerce-product-attributes-item__value p {
+  margin: auto;
+}
+table.woocommerce-product-attributes.shop_attributes {
+  text-align: left;
+  width: 50%;
+}
 
+
+/* ------ Categori/filter rettelser -----*/
+
+/* baggrund når man har filtreret..*/
+.site-footer {
+  background-color: #0a0a0a;
+  padding-top: 25px;
+}
+
+h1.woocommerce-products-header__title.page-title {
+  color: white;
+  text-align: left;
+}
 
 
 /*--- Nyhedsbrev ---*/
@@ -219,6 +240,7 @@ input[type="checkbox"] {
   width: 100vw;
   margin-left: -40px;
 }
+
 
 
 }
