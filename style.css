@@ -70,8 +70,8 @@ h2 {
 
 
 /* --------  forside splash rettelse - 100vw i breden------ */
-.wp-block-cover.alignfull.has-background-dim-40.has-background-dim {
-  width: 100vw;
+video.wp-block-cover__video-background.intrinsic-ignore{
+  width: 110vw;
   margin-left: -3vw;
 }
 
