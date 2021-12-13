@@ -78,7 +78,7 @@ video.wp-block-cover__video-background.intrinsic-ignore{
 /*- overlay skal også fylde hele skærmen..... */ 
 .wp-block-cover-image.has-background-dim.has-background-dim-40 .wp-block-cover__gradient-background, .wp-block-cover-image.has-background-dim.has-background-dim-40:not(.has-background-gradient):before, .wp-block-cover.has-background-dim.has-background-dim-40 .wp-block-cover__gradient-background, .wp-block-cover.has-background-dim.has-background-dim-40:not(.has-background-gradient):before {
 width: 120vw;
-margin-left: -100px;
+margin-left: -50px;
 
 }
 
@@ -214,10 +214,14 @@ input[type="checkbox"] {
 
 @media (min-width: 576px) {
 
+  /* - Splashvideo */
 video.wp-block-cover__video-background.intrinsic-ignore {
   margin-left: -100px;
 }
-
+/*- overlay skal også fylde hele skærmen..... */ 
+.wp-block-cover-image.has-background-dim.has-background-dim-40 .wp-block-cover__gradient-background, .wp-block-cover-image.has-background-dim.has-background-dim-40:not(.has-background-gradient):before, .wp-block-cover.has-background-dim.has-background-dim-40 .wp-block-cover__gradient-background, .wp-block-cover.has-background-dim.has-background-dim-40:not(.has-background-gradient):before {
+  margin-left: -100px;
+  }
 
 }
   
