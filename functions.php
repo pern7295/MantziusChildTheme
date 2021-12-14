@@ -18,8 +18,6 @@ add_filter( 'locale_stylesheet_uri', 'chld_thm_cfg_locale_css' );
 
 //----------------------CUSTOM PHP - MANTZIUS ------------------------------------------
 
-wp_enqueue_script( 'gsap', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js', array(), false, true );
-
 // ADD COSTUM JS
 /**
  * Enqueue a script with jQuery as a dependency.
