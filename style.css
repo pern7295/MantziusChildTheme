@@ -174,7 +174,19 @@ background-color: rgba(255, 98, 51, 0.3)!important;
 
 /* SØG */
 .header-search-form.active {
-  background-color: rgba(255, 98, 51, 0.3);
+  background-color: black;
+}
+/* -  søgeresultat - */
+nav.woocommerce-breadcrumb {
+  margin-top: 12vw;
+}
+
+/* - login side - */
+article#post-41 {
+  margin-top: 12vw;
+}
+.woocommerce-account.logged-in .entry-content>.woocommerce .woocommerce-MyAccount-navigation ul .is-active a {
+  background-color: rgba(255, 98, 51, 0.3) !important;
 }
 
 /* ------ Categori/filter rettelser -----*/
