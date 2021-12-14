@@ -170,6 +170,24 @@ form.woocommerce-cart-form {
   background-color: rgba(255, 98, 51, 0.3) !important;
 }
 
+/* rabat cupon */
+.woocommerce-form-coupon-toggle .woocommerce-info {
+  background-color: black;
+}
+form.checkout_coupon.woocommerce-form-coupon {
+  background-color: rgba(255, 98, 51, 0.3);
+}
+
+/* - odre oversigt slut...*/
+div#order_review {
+  background-color: rgba(255, 98, 51, 0.3);
+}
+ul.woocommerce-error {
+  background-color: red;
+}
+
+
+
 /* SØG */
 .header-search-form.active {
   background-color: black;
@@ -192,6 +210,12 @@ article#post-41 {
   a {
   background-color: rgba(255, 98, 51, 0.3) !important;
 }
+
+/* ----------- Betalting ----------- */
+.woocommerce-form-coupon-toggle {
+  padding-top: 22vw;
+}
+
 
 /* ------ Categori/filter rettelser -----*/
 
@@ -234,7 +258,9 @@ input[type="checkbox"] {
 .footer-widgets-grid.col1.align-top {
   width: 100vw;
   margin-left: -20px;
+  padding-bottom: 0;
 }
+
 
 /* -  footer tekst luft - */
 .wp-block-columns.alignfull.are-vertically-aligned-bottom {
