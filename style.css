@@ -69,9 +69,7 @@ h2 {
 
 /* --------  forside splash rettelse - 100vw i breden------ */
 
-
 /*- overlay skal også fylde hele skærmen..... */
-
 
 body:not(.botiga-page-builder-mode) .no-sidebar .entry-content .alignfull {
   max-width: 100vw;
@@ -153,7 +151,6 @@ table.woocommerce-product-attributes.shop_attributes {
   width: 50%;
 }
 
-
 /* KURV - Login - SØG */
 
 /* margin til kurven */
@@ -162,14 +159,15 @@ form.woocommerce-cart-form {
 }
 /* Farve på kurven */
 .cart-layout2 .cart_totals {
-background-color: rgba(255, 98, 51, 0.3)!important;
+  background-color: rgba(255, 98, 51, 0.3) !important;
 }
 .woocommerce-cart .cart_totals h2 {
   text-align: right;
   transform: none;
 }
-.site-header-cart .widget_shopping_cart .woocommerce-mini-cart__buttons, .site-header-cart .widget_shopping_cart .woocommerce-mini-cart__total {
-  background-color: rgba(255, 98, 51, 0.3)!important;
+.site-header-cart .widget_shopping_cart .woocommerce-mini-cart__buttons,
+.site-header-cart .widget_shopping_cart .woocommerce-mini-cart__total {
+  background-color: rgba(255, 98, 51, 0.3) !important;
 }
 
 /* SØG */
@@ -185,7 +183,13 @@ nav.woocommerce-breadcrumb {
 article#post-41 {
   margin-top: 12vw;
 }
-.woocommerce-account.logged-in .entry-content>.woocommerce .woocommerce-MyAccount-navigation ul .is-active a {
+.woocommerce-account.logged-in
+  .entry-content
+  > .woocommerce
+  .woocommerce-MyAccount-navigation
+  ul
+  .is-active
+  a {
   background-color: rgba(255, 98, 51, 0.3) !important;
 }
 
@@ -264,7 +268,6 @@ input[type="checkbox"] {
   /* - Splashvideo */
 
   /*- overlay skal også fylde hele skærmen..... */
-
 }
 
 /* **************************** */
@@ -334,13 +337,10 @@ input[type="checkbox"] {
     background-position: center;
   }
 
-/* - Margin på cart totalt i kurven - */
+  /* - Margin på cart totalt i kurven - */
   .cart-layout2 .cart_totals {
     margin-top: 12vw;
-}
-
-
-
+  }
 }
 
 /* **************************** */
@@ -355,5 +355,9 @@ input[type="checkbox"] {
   }
   .program_padding {
     padding: 0% 10% 0% 10%;
+  }
+
+  .wp-block-cover .wp-block-cover-image {
+    height: 75vh;
   }
 }
