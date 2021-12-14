@@ -232,6 +232,11 @@ input[type="checkbox"] {
   margin-left: -20px;
 }
 
+/* -  footer tekst luft - */
+.wp-block-columns.alignfull.are-vertically-aligned-bottom {
+  margin: 0 4vw 2vw 4vw;
+}
+
 /* om mantzius infografik */
 .infografik_1 {
   background-image: url(https://rendtorffdesigns.dk/kea/15_mantzius/wordpress/wp-content/uploads/2021/12/om_m_1.1.png);
