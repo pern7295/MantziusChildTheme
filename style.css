@@ -399,3 +399,42 @@ div#cmplz-document {
     height: 75vh;
   }
 }
+
+
+
+
+
+
+    /*---------- Effekter -----------*/
+
+/* - hover på froside kategorier - */
+    .forside_kat .wp-block-column{
+      transition: 0.2s;
+    }
+    .forside_kat .wp-block-column:hover{
+      transform: scale(1.1);
+    }
+
+
+
+    .zoom_attention {
+      animation-name: zoom_attention;
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+      animation-fill-mode: both;
+      animation-timing-function: linear;
+  }
+
+  @keyframes zoom_attention {
+      0%{ 
+          transform: scale(1)
+      }
+      
+      50%{ transform: scale(1.13) 
+      }
+
+      100%{ 
+          transform: scale(1) 
+
+      }
+  }
