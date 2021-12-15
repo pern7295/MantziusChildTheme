@@ -411,6 +411,9 @@ div#cmplz-document {
 .tilmeld_jatak_js, .tilmeld_maaske_js {
   margin: auto;
 }
+.tilmeld_jatak_js {
+  margin-top: 80px;
+}
 
 
     /*----------------------- Effekter ------------------------*/
