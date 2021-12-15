@@ -402,10 +402,18 @@ div#cmplz-document {
 
 
 
+/*--- Javascript landingpage ---*/
+
+.display_none{
+  display: none;
+}
+
+.tilmeld_jatak_js, .tilmeld_maaske_js {
+  margin: auto;
+}
 
 
-
-    /*---------- Effekter -----------*/
+    /*----------------------- Effekter ------------------------*/
 
 /* - hover på froside kategorier - */
     .forside_kat .wp-block-column{
