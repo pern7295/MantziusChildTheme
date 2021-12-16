@@ -40,6 +40,22 @@ h2 {
   margin-bottom: 120px;
 }
 
+/* Highlight nav-element */
+li.current_page_item {
+  color: #fff;
+}
+
+/* Highlight nav-element */
+li.current_page_item a {
+  text-decoration: underline;
+}
+
+/*Scale på forside kategorier*/
+.coblocks-gallery--item:hover {
+  transition-timing-function: ease;
+  transform: scale(1.1);
+}
+
 /*Padding*/
 .add_padding {
   padding: 5%;
@@ -186,8 +202,6 @@ ul.woocommerce-error {
   background-color: red;
 }
 
-
-
 /* SØG */
 .header-search-form.active {
   background-color: black;
@@ -215,7 +229,6 @@ article#post-41 {
 .woocommerce-form-coupon-toggle {
   padding-top: 22vw;
 }
-
 
 /* ------ Categori/filter rettelser -----*/
 
@@ -269,15 +282,10 @@ input[type="checkbox"] {
   margin-top: -100px;
 }
 
-
 /* - Cookie side */
 div#cmplz-document {
   margin-top: 12vw;
 }
-
-
-
-
 
 /* om mantzius infografik */
 .infografik_1 {
@@ -400,53 +408,49 @@ div#cmplz-document {
   }
 }
 
-
-
 /*--- Javascript landingpage ---*/
 
-.display_none{
+.display_none {
   display: none;
 }
 
 /* nicelice på tilmeld planket */
-.tilmeld_jatak_js, .tilmeld_maaske_js {
+.tilmeld_jatak_js,
+.tilmeld_maaske_js {
   margin: auto;
 }
 .tilmeld_jatak_js {
   margin-top: 80px;
 }
 
-
-    /*----------------------- Effekter ------------------------*/
+/*----------------------- Effekter ------------------------*/
 
 /* - hover på froside kategorier - */
-    .forside_kat .wp-block-column{
-      transition: 0.2s;
-    }
-    .forside_kat .wp-block-column:hover{
-      transform: scale(1.1);
-    }
+.forside_kat .wp-block-column {
+  transition: 0.2s;
+}
+.forside_kat .wp-block-column:hover {
+  transform: scale(1.1);
+}
 
+.zoom_attention {
+  animation-name: zoom_attention;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+  animation-timing-function: linear;
+}
 
-
-    .zoom_attention {
-      animation-name: zoom_attention;
-      animation-duration: 4s;
-      animation-iteration-count: infinite;
-      animation-fill-mode: both;
-      animation-timing-function: linear;
+@keyframes zoom_attention {
+  0% {
+    transform: scale(1);
   }
 
-  @keyframes zoom_attention {
-      0%{ 
-          transform: scale(1)
-      }
-      
-      50%{ transform: scale(1.13) 
-      }
-
-      100%{ 
-          transform: scale(1) 
-
-      }
+  50% {
+    transform: scale(1.13);
   }
+
+  100% {
+    transform: scale(1);
+  }
+}
