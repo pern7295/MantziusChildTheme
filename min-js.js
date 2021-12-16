@@ -44,7 +44,7 @@ let images = {
   },
 };
 
-//Her angiver vi en styling-klasse, som vi vil give til alle billederne, så de kan styles ens, fx med en hover-effekt
+//Her angiver vi en styling-klasse, som vi vil give til alle <a>-tag, så de kan styles ens, fx med en hover-effekt
 let anchorTagClassName = "concert-link";
 
 //Vi sætter funktionen addAnchorTagToIMG i gang
@@ -72,33 +72,33 @@ function jamaaske() {
 
 //funktionen addAnchorTagToIMG begynder. I denne funktion, vil vi gerne tilføje værdierne fra "let image"-objecterne
 function addAnchorTagToIMG() {
-  //Obejct.keys(images) refererer til at vi tager værdierne i "let images", altså klassen, link og artist
+  //Obejct.keys(images) refererer til at vi tager nøglerne i "let images", altså link og artist
   //Vi kører et forEach-loop, og for hvert "element" i dette loop ...
   Object.keys(images).forEach((element) => {
-    //vi laver en variabel, hvor vi giver det et ".", for at lave det til en klasse vi kan kalde på
+    //vi laver en variabel, hvor vi giver det et ".", for at lave det til en klasse som kan styles i css.
     let imageTag = document.querySelector("." + element);
 
-    //Vi benytter et if-statement til at tjekke om klasserne på billederne findes (da de kun skal kunne findes på forsiden, hvor de ligger)
-    //Hvis imageTag IKKE er 0, ELLER imageTag = IKKE er udefineret ... (altså at billederne FINDES)...
-    //... Da tilføjer vi et a-tag. som vi kalder anchorTag, som vi giver href-værdien fra "link"...
+    //Vi benytter en if-statement til at tjekke om klasserne på billederne findes (da de kun skal kunne findes på forsiden, hvor de ligger)
+    //Hvis imageTag IKKE er null (udefineret), ELLER imageTag = IKKE er udefineret ... (altså at billederne FINDES)...
+    //... Da tilføjer vi et <a>-tag. som vi kalder anchorTag, som vi giver href-værdien fra "link"...
     //... Og tilføjer addAnchorTagToIMG så vi kan lave en hover på billedet
     if (imageTag != null || imageTag != undefined) {
       let anchorTag = document.createElement("a");
       anchorTag.href = images[element].link;
       anchorTag.className = anchorTagClassName;
 
-      //Nu tager vi og tilføjer a-tagget og sætter vores img-tag (billedet fra vores obejct) sammen
+      //Nu tager vi og tilføjer <a>-tagget og sætter vores <img>-tag (billedet fra vores obejct) sammen
       imageTag.parentNode.appendChild(anchorTag);
       anchorTag.appendChild(imageTag);
 
       //I HTML ser det således ud:
       //<figure>
       //<a>
-      //<img>
+      //<img/>
       //</a>
       //</figure>
 
-      //Nu fungerer billedet som et a-tag
+      //Nu fungerer billedet som et <a>-tag
 
       console.log(imageTag);
     }
