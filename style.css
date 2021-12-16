@@ -133,6 +133,23 @@ body:not(.botiga-page-builder-mode) .no-sidebar .entry-content .alignfull {
   background-color: #ff5a2a;
 }
 
+/* BASKET SIDE-RETTELSER */
+.woocommerce-message,
+.woocommerce-info,
+.woocommerce-error,
+.woocommerce-noreviews,
+p.no-comments,
+.botiga-quick-view-popup form.cart .qty,
+.woocommerce-Reviews
+  #comments
+  .review
+  .comment_container
+  .comment-text
+  .description,
+.woocommerce-Reviews #review_form_wrapper {
+  background-color: rgba(255, 98, 51, 0.3) !important;
+}
+
 /*-----*/
 
 /* HEADER STYLING*/
@@ -318,14 +335,46 @@ div#cmplz-document {
   background-position: center;
 }
 
+@media (max-width: 550px) {
+  button,
+  a.button:not(.wc-forward),
+  .checkout-button.button,
+  .wp-block-button__link,
+  input[type="button"],
+  input[type="reset"],
+  input[type="submit"],
+  .woocommerce-message .button.wc-forward {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2vh;
+  }
+}
+
 /* **************************** */
-/* lg Large devices (desktops, 992px and up) */
+/* sm smalll devices*/
 /* **************************** */
 
 @media (min-width: 576px) {
   /* - Splashvideo */
 
   /*- overlay skal også fylde hele skærmen..... */
+  /* BASKET SIDE-RETTELSER */
+  .woocommerce-message,
+  .woocommerce-info,
+  .woocommerce-error,
+  .woocommerce-noreviews,
+  p.no-comments,
+  .botiga-quick-view-popup form.cart .qty,
+  .woocommerce-Reviews
+    #comments
+    .review
+    .comment_container
+    .comment-text
+    .description,
+  .woocommerce-Reviews #review_form_wrapper {
+    background-color: rgba(255, 98, 51, 0.3) !important;
+    margin-top: 20vh;
+  }
 }
 
 /* **************************** */
@@ -399,70 +448,70 @@ div#cmplz-document {
   .cart-layout2 .cart_totals {
     margin-top: 12vw;
   }
-}
 
-/* **************************** */
-/* lg Large devices (desktops, 1024px and up) */
-/* **************************** */
+  /* **************************** */
+  /* lg Large devices (desktops, 1024px and up) */
+  /* **************************** */
 
-/* Forside filteringen af kategori marg */
-@media (min-width: 1024px) {
-  body:not(.botiga-page-builder-mode) .no-sidebar .entry-content .alignwide {
-    margin: 0px 0px calc(25% - 15vw);
-    width: auto;
-  }
-  .program_padding {
-    padding: 0% 10% 0% 10%;
-  }
+  /* Forside filteringen af kategori marg */
+  @media (min-width: 1024px) {
+    body:not(.botiga-page-builder-mode) .no-sidebar .entry-content .alignwide {
+      margin: 0px 0px calc(25% - 15vw);
+      width: auto;
+    }
+    .program_padding {
+      padding: 0% 10% 0% 10%;
+    }
 
-  .wp-block-cover .wp-block-cover-image {
-    height: 75vh;
-  }
-}
-
-/*--- Javascript landingpage ---*/
-
-.display_none {
-  display: none;
-}
-
-/* nicelice på tilmeld planket */
-.tilmeld_jatak_js,
-.tilmeld_maaske_js {
-  margin: auto;
-}
-.tilmeld_jatak_js {
-  margin-top: 80px;
-}
-
-/*----------------------- Effekter ------------------------*/
-
-/* - hover på froside kategorier - */
-.forside_kat .wp-block-column {
-  transition: 0.2s;
-}
-.forside_kat .wp-block-column:hover {
-  transform: scale(1.1);
-}
-
-.zoom_attention {
-  animation-name: zoom_attention;
-  animation-duration: 4s;
-  animation-iteration-count: infinite;
-  animation-fill-mode: both;
-  animation-timing-function: linear;
-}
-
-@keyframes zoom_attention {
-  0% {
-    transform: scale(1);
+    .wp-block-cover .wp-block-cover-image {
+      height: 75vh;
+    }
   }
 
-  50% {
-    transform: scale(1.13);
+  /*--- Javascript landingpage ---*/
+
+  .display_none {
+    display: none;
   }
 
-  100% {
-    transform: scale(1);
+  /* nicelice på tilmeld planket */
+  .tilmeld_jatak_js,
+  .tilmeld_maaske_js {
+    margin: auto;
+  }
+  .tilmeld_jatak_js {
+    margin-top: 80px;
+  }
+
+  /*----------------------- Effekter ------------------------*/
+
+  /* - hover på froside kategorier - */
+  .forside_kat .wp-block-column {
+    transition: 0.2s;
+  }
+  .forside_kat .wp-block-column:hover {
+    transform: scale(1.1);
+  }
+
+  .zoom_attention {
+    animation-name: zoom_attention;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    animation-timing-function: linear;
+  }
+
+  @keyframes zoom_attention {
+    0% {
+      transform: scale(1);
+    }
+
+    50% {
+      transform: scale(1.13);
+    }
+
+    100% {
+      transform: scale(1);
+    }
   }
 }
