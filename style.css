@@ -51,9 +51,21 @@ li.current_page_item a {
 }
 
 /*Scale på forside kategorier*/
+.coblocks-gallery--item {
+  transition: 0.2s;
+}
+
 .coblocks-gallery--item:hover {
-  transition-timing-function: ease;
-  transform: scale(1.1);
+  transform: scale(1.05);
+}
+
+/*Scale på forside soMe*/
+.some {
+  transition: 0.2s;
+}
+
+.some:hover {
+  transform: scale(1.05);
 }
 
 /*Padding*/

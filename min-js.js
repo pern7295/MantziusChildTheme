@@ -1,7 +1,7 @@
-console.log("Custom JS virker!");
+console.log("Custom-JS loaded");
 
-//JSON object med hver enkelte image. Hver "key" i objektet er den klasse som et image tag har, herunder kan du angive
-//linket som det billede skal føre hen til.
+//"let images", viser obejcter, der har det unikke klasse-navn for billedet, vi vil kalde på.
+//Vi tilføjer "link" og "artist", som er værdier vi vile lægge til billedet - senere i scriptet!
 let images = {
   "wp-image-950": {
     link: "folkeklubben",
@@ -14,7 +14,7 @@ let images = {
   },
 
   "wp-image-952": {
-    link: "kultimangoes",
+    link: "kutimangoes",
     artist: "Kutimangoes",
   },
 
@@ -44,13 +44,13 @@ let images = {
   },
 };
 
-//Her angiver du den klasse som anchor-tags'ne kan have.
+//Her angiver vi en styling-klasse, som vi vil give til alle billederne, så de kan styles ens, fx med en hover-effekt
 let anchorTagClassName = "concert-link";
 
-//#region Metode kald
-
+//Vi sætter funktionen addAnchorTagToIMG i gang
 addAnchorTagToIMG();
 
+//Her kalder vi andre funktioner med en eventlistener - de kalder på en toogle-funktion
 document
   .querySelector(".jatak_tilmeld_knap")
   .addEventListener("mousedown", jatak);
@@ -58,37 +58,49 @@ document
   .querySelector(".maaske_tilmeld_knap")
   .addEventListener("mousedown", jamaaske);
 
-//#endregion
-
-//#region Metoder
+//Toogle-funktion fra kaldet "jatak"
 function jatak() {
   document.querySelector(".tilmeld_jatak_js").classList.toggle("display_none");
   document.querySelector(".tilmeld_maaske_js").classList.add("display_none");
 }
 
+//Toogle-funktion fra kaldet "jamaaske"
 function jamaaske() {
   document.querySelector(".tilmeld_maaske_js").classList.toggle("display_none");
   document.querySelector(".tilmeld_jatak_js").classList.add("display_none");
 }
 
-//Method adds each <a>-tag to the parent div of the div with the class of element.
+//funktionen addAnchorTagToIMG begynder. I denne funktion, vil vi gerne tilføje værdierne fra "let image"-objecterne
 function addAnchorTagToIMG() {
-  //Element er streng-værdien af de klasser af de img-tags, som vi gerne vil tilføje et link til
+  //Obejct.keys(images) refererer til at vi tager værdierne i "let images", altså klassen, link og artist
+  //Vi kører et forEach-loop, og for hvert "element" i dette loop ...
   Object.keys(images).forEach((element) => {
+    //vi laver en variabel, hvor vi giver det et ".", for at lave det til en klasse vi kan kalde på
     let imageTag = document.querySelector("." + element);
 
-    //Check for om ImageTag eksistere.
+    //Vi benytter et if-statement til at tjekke om klasserne på billederne findes (da de kun skal kunne findes på forsiden, hvor de ligger)
+    //Hvis imageTag IKKE er 0, ELLER imageTag = IKKE er udefineret ... (altså at billederne FINDES)...
+    //... Da tilføjer vi et a-tag. som vi kalder anchorTag, som vi giver href-værdien fra "link"...
+    //... Og tilføjer addAnchorTagToIMG så vi kan lave en hover på billedet
     if (imageTag != null || imageTag != undefined) {
       let anchorTag = document.createElement("a");
       anchorTag.href = images[element].link;
       anchorTag.className = anchorTagClassName;
 
+      //Nu tager vi og tilføjer a-tagget og sætter vores img-tag (billedet fra vores obejct) sammen
       imageTag.parentNode.appendChild(anchorTag);
       anchorTag.appendChild(imageTag);
+
+      //I HTML ser det således ud:
+      //<figure>
+      //<a>
+      //<img>
+      //</a>
+      //</figure>
+
+      //Nu fungerer billedet som et a-tag
 
       console.log(imageTag);
     }
   });
 }
-
-//#endregion
